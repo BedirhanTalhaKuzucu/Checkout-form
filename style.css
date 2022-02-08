@@ -1,0 +1,253 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#title{
+    margin: 2rem;
+    text-align: center;
+}
+
+main{
+    margin: auto;
+    margin-top: 35px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form{
+    width: 50%;
+} 
+
+.data-form__datas{
+    margin-top:  10px;
+}
+
+.data-form h1{
+    font-size: 18px;
+    margin: 15px 0 15px 0;
+    color: #333333;
+}
+
+
+label{
+    display: block;
+    font-size: 12px;
+    text-decoration: none solid rgb(79,79,79);
+    color: #4f4f4f;
+    margin: 10px 0 10px 0;
+    
+
+}
+
+input, select{
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 14px;
+    border : 1px solid #828282;
+    border-radius: 5px;
+    padding: 8px 5px 8px 35px;
+    width: 80%;
+    color: #828282;
+}
+
+
+select{
+    padding: 8px 5px 8px 35px;
+    width: 100%;
+}
+
+.shipping-address{
+    margin-top: 3rem;
+}
+
+.country-field{
+    display: inline-block;
+    margin-right: 10%;
+}
+
+
+
+.postalcode-field{
+    display: inline-block;
+}
+
+#user-reminder{
+    display: inline-block;
+    width: fit-content;
+    margin: 10px 0 10px 0 ;
+}
+
+#remind{
+    display: inline-block;
+    margin-left: 15px;
+
+}
+
+
+.input-icons{
+    width: 100%;
+    
+}
+
+.fas{
+    padding: 10px;
+    text-align: center;
+    color: #828282;
+}
+
+.input-icons i{
+    position: absolute;
+}
+
+
+
+.product-panel{
+    background-color: #EEEEEE;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 36%;
+    height: 50%;
+    border-radius: 0.7rem;
+}
+
+.product-panel__product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+}
+
+img{
+    width: 30%;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.product-panel__product-info{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-panel h2{
+    font-size:16px ;
+    text-decoration: none solid rgb(78, 81, 80);
+    width: 90%;
+    margin: 5px 0 -10px 0;
+    
+}
+
+
+
+.product-panel__quantity-controller{
+    position: absolute;
+    top: 70%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    width: 50%;
+    height: 27%;
+}
+
+button{
+    position: relative;
+    text-align: center;
+    background-color: #E0E0E0;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    width: 25%;
+    height: 80%;
+    border-radius: 5px;
+    display: block;
+    border: none;
+}
+
+
+
+.product-panel__price{
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #BDBDBD;
+    margin: 5px 0 5px 0;
+    
+}
+
+.product-panel__price p{
+    display: inline-block;
+    width: 50%;
+}
+
+.product-panel__price p:nth-child(2) {
+    text-align: right;
+}
+
+
+#btn-submit {
+    margin: auto;
+    width: 8%;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #f2994a;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+}
+
+@media only screen and (max-width: 750px) {
+
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form{
+        margin: auto;
+        width: 70%;
+    } 
+
+    .product-panel{
+        order: -1;
+        margin: auto;
+        margin-bottom: 3rem;
+        background-color: #EEEEEE;
+        padding: 10px 20px 10px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 60%;
+        border-radius: 0.7rem;
+    }
+
+    #btn-submit{
+        margin-top: 2rem;
+        width: 15%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .product-panel{
+       
+        width: 80%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+
+
+
